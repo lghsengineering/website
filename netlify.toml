@@ -1,0 +1,11 @@
+[build]
+publish = "_site"
+command = "eleventy"
+
+[[plugins]]
+  package = "netlify-plugin-inline-source"
+
+[[redirects]]
+  from = "/*"
+  to = "/notfound.html"
+  status = 404
